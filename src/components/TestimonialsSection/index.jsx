@@ -1,8 +1,15 @@
 import { useState } from "react";
 import { Button } from "../ui/button";
-import { ChevronLeft, ChevronRight, MoveLeft, MoveRight, Star } from "lucide-react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  MoveLeft,
+  MoveRight,
+  Star,
+} from "lucide-react";
 import Image from "next/image";
 import { Card, CardContent } from "../ui/card";
+import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
 
 const testimonials = [
   {
@@ -133,22 +140,20 @@ export default function TestimonialsSection() {
 
         {/* Navigation */}
         <div className="flex justify-start gap-4">
-          <Button
-            variant="slider"
+          <utton
             onClick={prevTestimonial}
-            className="w-32 h-14 relative"
+            className="w-32 h-14 border-4 flex justify-end items-center border-primary cursor-pointer rounded-full text-primary !p-0 relative"
             aria-label="Previous testimonial"
           >
-           <MoveLeft className="h-4 w-24 absolute right-0" />
-          </Button>
-          <Button
-            variant="slider"
+            <FaArrowLeftLong size={25} className="text-2xl" />
+          </utton>
+          <utton
             onClick={nextTestimonial}
-            className="flex w-32 h-14 relative"
+            className="w-32 h-14 border-4 flex justify-start items-center border-primary cursor-pointer rounded-full text-primary !p-0 relative"
             aria-label="Next testimonial"
           >
-             <MoveRight className="h-4 w-24 absolute left-0" />
-          </Button>
+            <FaArrowRightLong size={25} className="text-2xl" />
+          </utton>
         </div>
       </div>
 
