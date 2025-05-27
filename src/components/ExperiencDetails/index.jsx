@@ -22,8 +22,8 @@ const ExperienceDetails = () => {
 
         <p className="text-gray-600 mb-4">
           Slow down. Watch the light move across the rice fields. Learn how to
-          make coconut oil the way it’s been done for generations. This is Bali
-          with soul — the part you don’t find in guidebooks.
+          make coconut oil the way it&apos;s been done for generations. This is Bali
+          with soul — the part you don&apos;t find in guidebooks.
         </p>
 
         <h2 className="text-md font-semibold text-[#384B40] mb-2">
@@ -37,7 +37,7 @@ const ExperienceDetails = () => {
         </p>
 
         <h3 className="text-2xl font-semibold text-[#384B40] mb-3">
-          What’s included?
+          What&apos;s included?
         </h3>
         <ul className="text-gray-700 space-y-2 mb-6">
           <li className="flex items-center gap-2">
@@ -109,7 +109,7 @@ const ExperienceDetails = () => {
 
           <Button
             type="submit"
-            className="w-full bg-primary text-white py-2 rounded-xl w-fit cursor-pointer hover:bg-green-900 transition"
+            className=" bg-primary text-white py-2 rounded-xl w-fit cursor-pointer hover:bg-green-900 transition"
           >
             Reserve for free →
           </Button>

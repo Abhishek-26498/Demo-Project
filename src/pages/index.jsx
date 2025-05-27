@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
-import TripCard from "../components/TripCard";
-import { Header } from "../components/Header";
-import { ImageGrid } from "../components/ImageGrid";
 import ExperienceDetails from "../components/ExperiencDetails";
+import { ImageGrid } from "../components/ImageGrid";
+import TestimonialsSection from "../components/TestimonialsSection";
+import TripCard from "../components/TripCard";
 
 const Home = () => {
   const [isMounted, setIsmounted] = useState(false);
@@ -24,16 +24,16 @@ const Home = () => {
 
   if (!isMounted) return null;
   return (
-    <div>
-      <div className="bg-foreground pb-16">
-        <Header />
+    <div className="bg-foreground">
+      <div className=" pb-16">
         <div className="w-full flex flex-col lg:flex-row gap-6  p-6 md:p-16 h-full">
           <ImageGrid images={images1} />
           <ImageGrid images={images2} />
         </div>
         <TripCard />
       </div>
-        <ExperienceDetails/>
+      <ExperienceDetails />
+      <TestimonialsSection />
     </div>
   );
 };
