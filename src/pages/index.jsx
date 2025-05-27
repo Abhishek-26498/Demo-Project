@@ -4,7 +4,7 @@ import TripCard from "../components/TripCard";
 import { Header } from "../components/Header";
 import { ImageGrid } from "../components/ImageGrid";
 import ExperienceDetails from "../components/ExperiencDetails";
-import Footer from "../components/Fotter";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const [isMounted, setIsmounted] = useState(false);
