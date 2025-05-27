@@ -140,20 +140,20 @@ export default function TestimonialsSection() {
 
         {/* Navigation */}
         <div className="flex justify-start gap-4">
-          <utton
+          <button
             onClick={prevTestimonial}
             className="w-32 h-14 border-4 flex justify-end items-center border-primary cursor-pointer rounded-full text-primary !p-0 relative"
             aria-label="Previous testimonial"
           >
             <FaArrowLeftLong size={25} className="text-2xl" />
-          </utton>
-          <utton
+          </button>
+          <button
             onClick={nextTestimonial}
             className="w-32 h-14 border-4 flex justify-start items-center border-primary cursor-pointer rounded-full text-primary !p-0 relative"
             aria-label="Next testimonial"
           >
             <FaArrowRightLong size={25} className="text-2xl" />
-          </utton>
+          </button>
         </div>
       </div>
 
