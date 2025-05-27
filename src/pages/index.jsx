@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
-import TripCard from "../components/TripCard";
-import { Header } from "../components/Header";
-import { ImageGrid } from "../components/ImageGrid";
 import ExperienceDetails from "../components/ExperiencDetails";
-import Footer from "../components/Footer";
+import { ImageGrid } from "../components/ImageGrid";
+import TestimonialsSection from "../components/TestimonialsSection";
+import TripCard from "../components/TripCard";
 
 const Home = () => {
   const [isMounted, setIsmounted] = useState(false);
@@ -34,6 +33,7 @@ const Home = () => {
         <TripCard />
       </div>
       <ExperienceDetails />
+      <TestimonialsSection />
     </div>
   );
 };
