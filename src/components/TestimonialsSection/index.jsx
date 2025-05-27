@@ -69,7 +69,7 @@ export default function TestimonialsSection() {
     return Array.from({ length: 5 }, (_, i) => (
       <Star
         key={i}
-        className={`w-5 h-5 ${
+        className={`w-4 h-4 sm:w-5 sm:h-5 ${
           i < rating ? "fill-yellow-400 text-yellow-400" : "text-gray-300"
         }`}
       />
@@ -97,11 +97,13 @@ export default function TestimonialsSection() {
         </header>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12">
           {getVisibleTestimonials().map((testimonial, index) => (
             <Card
               key={`${testimonial.id}-${currentIndex}-${index}`}
-              className="bg-white hover:shadow-lg transition-shadow duration-300 border-4 rounded-4xl overflow-hidden"
+              className={`bg-white hover:shadow-lg transition-all duration-300 border-2 sm:border-4 rounded-2xl sm:rounded-3xl lg:rounded-4xl overflow-hidden ${
+                index === 2 ? "hidden xl:block" : ""
+              } ${index === 1 ? "hidden lg:block" : ""}`}
             >
               <CardContent className="p-8">
                 {/* Rating */}
@@ -139,7 +141,7 @@ export default function TestimonialsSection() {
         </div>
 
         {/* Navigation */}
-        <div className="flex justify-start gap-4">
+        <div className="flex justify-center lg:justify-start gap-4">
           <utton
             onClick={prevTestimonial}
             className="w-32 h-14 border-4 flex justify-end items-center border-primary cursor-pointer rounded-full text-primary !p-0 relative"
