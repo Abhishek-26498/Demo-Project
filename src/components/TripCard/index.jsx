@@ -10,7 +10,7 @@ import { Card } from "../ui/card";
 
 const TripCard = () => {
   return (
-    <div className="flex flex-col items-center p-6  max-w-full mx-auto text-center">
+    <div className="flex flex-col items-center p-6 md:p-16  max-w-full mx-auto text-center">
       <h1 className="text-2xl sm:text-[52px] text-[#384B40] font-bold  mb-2">
         Balinese Day with a Local <br />
         Family

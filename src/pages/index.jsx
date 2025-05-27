@@ -25,7 +25,7 @@ const Home = () => {
   if (!isMounted) return null;
   return (
     <div>
-      <div className="bg-foreground ">
+      <div className="bg-foreground pb-16">
         <Header />
         <div className="w-full flex flex-col lg:flex-row gap-6  p-6 md:p-16 h-full">
           <ImageGrid images={images1} />

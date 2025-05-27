@@ -13,7 +13,7 @@ import { Button } from "../ui/button";
 
 const ExperienceDetails = () => {
   return (
-    <div className="flex flex-col w-full lg:flex-row max-w-full p-6 gap-16 justify-between md:py-24 md:px-20 bg-white">
+    <div className="flex flex-col w-full lg:flex-row max-w-full p-6 gap-16 justify-between md:py-24 md:px-16 bg-white">
       {/* Left Section */}
       <div className="flex-1 max-w-4xl">
         <h1 className="text-3xl font-bold text-[#384B40] mb-4">
